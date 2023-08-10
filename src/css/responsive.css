@@ -1,0 +1,16 @@
+@media(min-width: 1260px) {
+    html {
+        height: 100vh;
+    }
+
+    body {
+        height: 100vh;
+    }
+
+    main {
+        padding-top: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+}
