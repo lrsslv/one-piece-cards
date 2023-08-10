@@ -1,0 +1,175 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #2079cc69;
+    color: #161515;
+    &::before {
+        content: "";
+        background: url(../imagens/coliseum.jpg) no-repeat center;
+        background-size: cover;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.5;
+    }
+}
+
+.modo-escuro {
+    background-color: #13094b;
+    color: #fffafa;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .logo,
+header .imagem-botao {
+    width: 40px;
+    transition: 0.3 ease-in-out;
+}
+
+header #botao-alterar-tema {
+    background: none;
+    border: none;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-one-piece:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main {
+    padding: 25px;
+}
+
+main .listagem-one-piece {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .cartao-one-piece {
+    background-color: #e2dec3;
+    width: 210px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 1px -1px 10px #615b39;
+    border: solid 1px #b6af85;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+main .cartao-one-piece:hover {
+    background-image: url(../imagens/onda.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+}
+
+.modo-escuro .cartao-one-piece {
+    background-color: #303030;
+    box-shadow: 1px -1px 10px #000000;
+    border: solid 1px #000000;
+}
+
+.modo-escuro .cartao-one-piece:hover {
+    background-image: url(../imagens/onda.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+}
+
+main .cartao-one-piece .informacoes {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 5px;
+}
+
+.modo-escuro .cartao-one-piece .informacoes {
+    border: 1px solid #fffafa;
+}
+
+main .cartao-one-piece .informacoes span {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+main .cartao-one-piece .gif {
+    width: 90px;
+    height: 90px;
+}
+
+main .cartao-one-piece .tipos {
+    display: flex;
+    gap: 15px;
+}
+
+main .cartao-one-piece .tipo {
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+main .cartao-one-piece .tipos .codinome {
+    font-size: 13px;
+}
+
+main .cartao-one-piece .tipos .card-001 {
+    background-color: #d20000;
+}
+
+main .cartao-one-piece .tipos .card-002 {
+    background-color: #7cb736;
+}
+
+main .cartao-one-piece .tipos .card-003 {
+    background-color: #3b6dc4;
+}
+
+main .cartao-one-piece .tipos .card-004 {
+    background-color: #a564c5;
+}
+
+main .cartao-one-piece .tipos .card-005 {
+    background-color: #e57676;
+}
+
+main .cartao-one-piece .tipos .card-006 {
+    background-color: #db2278;
+}
+
+main .cartao-one-piece .tipos .card-007 {
+    background-color: #ebb327;
+}
+
+main .cartao-one-piece .tipos .card-008 {
+    background-color: #dd5c24;
+}
+
+main .cartao-one-piece .tipos .card-009 {
+    background-color: #ad816e;
+}
+
+main .cartao-one-piece .tipos .card-010 {
+    background-color: #6e7686;
+}
+
+main .descricao {
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 7px;
+}
