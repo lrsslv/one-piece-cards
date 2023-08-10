@@ -6,12 +6,4 @@
     body {
         height: 100vh;
     }
-    
-    main {
-        padding-top: 0;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-    }
-
 }
