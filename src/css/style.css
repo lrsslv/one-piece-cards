@@ -3,11 +3,14 @@ body {
     background-color: #2079cc69;
     color: #161515;
     position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     &::before {
         content: "";
         background: url(../imagens/coliseum.jpg) no-repeat center center;
         background-size: cover;
-        background-attachment: fixed;
         width: 100%;
         height: 100%;
         position: absolute;
@@ -24,7 +27,10 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 25px;
+    padding: 26px;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 header .logo,

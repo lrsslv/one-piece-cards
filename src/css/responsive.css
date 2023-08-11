@@ -1,9 +1,5 @@
-@media(min-width: 1440px) {
-    html {
-        height: 100vh;
-    }
-
-    body {
-        height: 100vh;
+@media(max-width: 1216px){
+    main {
+        margin-top: 70px;
     }
 }
