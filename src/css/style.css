@@ -53,6 +53,8 @@ main .cartao-one-piece:hover {
 
 main {
     padding: 25px;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
 main .listagem-one-piece {
